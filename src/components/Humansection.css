@@ -1,0 +1,28 @@
+.human {
+  padding: var(--space-7) 0;
+  border-top: var(--border-soft);
+}
+
+.human__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.human__heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: var(--space-5);
+  max-width: 22ch;
+}
+
+.human__text {
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: var(--space-3);
+}
+
+.human__text:last-child {
+  margin-bottom: 0;
+}
