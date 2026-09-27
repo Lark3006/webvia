@@ -1,5 +1,5 @@
 import './Pricing.css'
-import { WHATSAPP_LINK_PRICING } from './constanst'
+import { WHATSAPP_LINK_PRICING } from '../constants'
 
 const plans = [
   {

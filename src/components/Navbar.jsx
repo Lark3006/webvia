@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Navbar.css'
 import Logo from './Logo'
-import { WHATSAPP_LINK_GENERAL } from './constanst'
+import { WHATSAPP_LINK_GENERAL } from '../constants'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)

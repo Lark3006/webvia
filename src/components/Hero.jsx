@@ -1,5 +1,5 @@
 import './Hero.css'
-import { WHATSAPP_LINK } from './constanst'
+import { WHATSAPP_LINK_GENERAL } from '../constants'
 
 function Hero() {
   return (
@@ -14,7 +14,7 @@ function Hero() {
             cepat diakses, dan jelas isinya, tanpa Anda perlu mengurus sisi teknisnya sendiri.
           </p>
           <div className="hero__actions">
-            <a className="btn btn--primary" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+            <a className="btn btn--primary" href={WHATSAPP_LINK_GENERAL} target="_blank" rel="noopener noreferrer">
               Mulai Konsultasi
             </a>
             <a className="btn btn--secondary" href="#portfolio">
