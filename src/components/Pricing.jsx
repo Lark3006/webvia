@@ -1,6 +1,5 @@
 import './Pricing.css'
-
-const WHATSAPP_LINK = "https://wa.me/+6285789021996?text=Halo%20Webvia%2C%20saya%20ingin%20tanya%20soal%20paket%20harga."
+import { WHATSAPP_LINK_PRICING } from './constanst'
 
 const plans = [
   {
@@ -54,7 +53,7 @@ function Pricing() {
                   <li key={feature}>{feature}</li>
                 ))}
               </ul>
-              <a className="btn btn--secondary pricing__cta" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+              <a className="btn btn--secondary pricing__cta" href={WHATSAPP_LINK_PRICING} target="_blank" rel="noopener noreferrer">
                 {plan.name === 'Custom' ? 'Diskusikan Kebutuhan' : 'Pilih Paket Ini'}
               </a>
             </div>

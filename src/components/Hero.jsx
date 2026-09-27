@@ -1,6 +1,5 @@
 import './Hero.css'
-
-const WHATSAPP_LINK = "https://wa.me/+6285789021996?text=Halo%20Webvia%2C%20saya%20ingin%20konsultasi%20website%20untuk%20bisnis%20saya."
+import { WHATSAPP_LINK } from './constanst'
 
 function Hero() {
   return (
