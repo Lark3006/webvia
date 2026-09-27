@@ -4,7 +4,7 @@ import { WHATSAPP_LINK_PRICING } from './constanst'
 const plans = [
   {
     name: 'Starter',
-    price: 'Rp 1.500.000',
+    price: 'Hubungi kami',
     description: 'Untuk bisnis yang baru mulai butuh kehadiran online sederhana.',
     features: [
       '1 halaman (landing page)',
@@ -15,7 +15,7 @@ const plans = [
   },
   {
     name: 'Business',
-    price: 'Rp 3.500.000',
+    price: 'Hubungi kami',
     description: 'Untuk bisnis yang butuh profil lengkap dan lebih dari satu halaman.',
     features: [
       'Hingga 5 halaman',
