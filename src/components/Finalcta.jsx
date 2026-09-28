@@ -1,5 +1,5 @@
 import { WHATSAPP_LINK_GENERAL } from '../constants'
-import './FinalCta.css'
+import './Finalcta.css'
 
 function FinalCta() {
   return (

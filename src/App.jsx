@@ -6,9 +6,9 @@ import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import Pricing from './components/Pricing'
 import Process from './components/Process'
-import Humansection from './components/Humansection'
+import HumanSection from './components/Humansection'
 import Footer from './components/Footer'
-import Finalcta from './components/Tempcta'
+import Finalcta from './components/Finalcta'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <Portfolio />
       <Pricing />
       <Process />
-      <Humansection />
+      <HumanSection />
       <Finalcta />
       <Footer />
     </div>

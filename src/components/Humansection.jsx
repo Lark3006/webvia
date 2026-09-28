@@ -1,4 +1,4 @@
-import './HumanSection.css'
+import './Humansection.css'
 import humanImage from '../assets/images/Human.png'
 
 function HumanSection() {
