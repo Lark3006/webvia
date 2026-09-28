@@ -1,16 +1,23 @@
-# React + Vite
+# Webvia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page untuk **Webvia** — jasa pembuatan website untuk UMKM, bisnis lokal, dan personal brand.
 
-Currently, two official plugins are available:
+Website ini menampilkan layanan, portfolio, paket harga, proses kerja, dan ajakan konsultasi melalui WhatsApp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- **Framework**: React + Vite
+- **Styling**: CSS (custom, tanpa framework CSS tambahan)
+- **Testing**: Vitest + React Testing Library
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Menjalankan Project
 
-## Expanding the ESLint configuration
+```bash
+npm install       # install dependencies (hanya perlu sekali / setelah pull perubahan baru)
+npm run dev       # jalankan development server (http://localhost:5173)
+npm test          # jalankan test
+npm run lint      # cek linting
+npm run build     # build untuk production (output di folder dist/)
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Struktur Project 

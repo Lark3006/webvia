@@ -51,3 +51,49 @@
   line-height: 1.6;
   max-width: 52ch;
 }
+
+/* ---------- Desktop: horizontal dengan garis penghubung ---------- */
+@media (min-width: 900px) {
+  .process__list {
+    flex-direction: row;
+    gap: var(--space-3);
+  }
+
+  .process__item {
+    grid-template-columns: 1fr;
+    border-top: none;
+    padding: 0;
+    position: relative;
+    flex: 1;
+  }
+
+  .process__item:last-child {
+    border-bottom: none;
+  }
+
+  .process__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-surface);
+    border: 1px solid var(--color-accent);
+    margin-bottom: var(--space-3);
+  }
+
+  .process__item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 54px;
+    right: -8px;
+    height: 1px;
+    background: var(--panel-border, rgba(255, 255, 255, 0.12));
+  }
+
+  .process__content p {
+    max-width: 26ch;
+  }
+}

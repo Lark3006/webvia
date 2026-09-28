@@ -1,5 +1,5 @@
-import './Pricing.css'
 import { WHATSAPP_LINK_PRICING } from '../constants'
+import './Pricing.css'
 
 const plans = [
   {
@@ -12,6 +12,7 @@ const plans = [
       'Tombol kontak WhatsApp',
       'Revisi 1x',
     ],
+    highlighted: false,
   },
   {
     name: 'Business',
@@ -23,6 +24,7 @@ const plans = [
       'Form kontak & integrasi WhatsApp',
       'Revisi 2x',
     ],
+    highlighted: true,
   },
   {
     name: 'Custom',
@@ -33,6 +35,7 @@ const plans = [
       'Diskusi kebutuhan lebih dulu',
       'Estimasi harga setelah konsultasi',
     ],
+    highlighted: false,
   },
 ]
 
@@ -44,7 +47,13 @@ function Pricing() {
 
         <div className="pricing__grid">
           {plans.map((plan) => (
-            <div className="pricing__card" key={plan.name}>
+            <div
+              className={`pricing__card${plan.highlighted ? ' pricing__card--highlighted' : ''}`}
+              key={plan.name}
+            >
+              {plan.highlighted && (
+                <span className="pricing__badge">Direkomendasikan</span>
+              )}
               <h3>{plan.name}</h3>
               <div className="pricing__price">{plan.price}</div>
               <p className="pricing__desc">{plan.description}</p>
@@ -53,7 +62,13 @@ function Pricing() {
                   <li key={feature}>{feature}</li>
                 ))}
               </ul>
-              <a className="btn btn--secondary pricing__cta" href={WHATSAPP_LINK_PRICING} target="_blank" rel="noopener noreferrer">
+              
+              <a
+                className={`btn pricing__cta ${plan.highlighted ? 'btn--primary' : 'btn--secondary'}`}
+                href={WHATSAPP_LINK_PRICING}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {plan.name === 'Custom' ? 'Diskusikan Kebutuhan' : 'Pilih Paket Ini'}
               </a>
             </div>
